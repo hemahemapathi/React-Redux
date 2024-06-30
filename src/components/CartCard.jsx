@@ -30,15 +30,14 @@ function CartCard() {
                     <div className="card-body px-3">
                       <div className="top">
                         <div className="top-header d-flex justify-content-between align-items-center">
-                          <h5 className="card-title">{e.title}</h5>
-                          <h4 className="card-title">${e.price}</h4>
+                        <h3 className="card-title"><b>{e.title}</b></h3>
                         </div>
                         <div className="d-flex justify-content-between align-items-center">
-                          <p className="card-text"><b>BRAND</b> : {e.brand}</p>
-                          <p className="card-text text-success">Discount Offer : {e.discountPercentage}%</p>
+                        <h5><p className="card-text"><b>BRAND</b> : {e.brand}</p></h5>
+                          <h5><b><p className="card-text text-secondary">Discount Offer : {e.discountPercentage}%</p></b></h5>
                         </div>
                         <p className="card-text">{e.description}</p>
-                        <p className="card-text"><b>RATING</b>: {e.rating}/5</p>
+                        <h5> <p className="card-text"><b>RATING</b>: {e.rating}/5</p></h5>
                         <div className="d-flex justify-content-between align-items-center">
                           <p className="card-text">
                             <small className="text-muted"><b>Last updated 3 mins ago</b></small>
